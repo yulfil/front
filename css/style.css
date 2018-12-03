@@ -1,0 +1,22 @@
+.card{
+	top: 130px;
+	margin-left: 10px;
+}
+.form-text{
+	font-size: 24px;
+}
+.card-body{
+	
+	margin:0 auto;
+	padding:0;
+	padding-bottom: 5px;
+	}
+.form-text{
+	color: white;
+}
+
+
+.forgot{
+	font-style:italic;
+
+}
