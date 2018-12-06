@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Course page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--  Fonts and icons  -->
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  
+    <!-- Black Dashboard CSS -->
+    <link href="css\black-dashboard.css?v=1.0.0" rel="stylesheet"/>
+    <style type="text/css">
+   
+    #editor {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+#submit{
+position: absolute;
+    width:100px;
+    height:30px;
+    left:0;
+}
+#next{
+    position: absolute;
+    width:100px;
+    height:30px;
+    left:110px;
+}
+</style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Ejudje</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
+      <section class="container container-full flex-column">
+    <div class="p-sm-3 h-100 col-12 d-flex align-items-center">
+        <div class="row justify-content-center m-auto">
+            <div class="col-md-12 col-sm-12 text-center">
+                <h3 class="col-12">Course to do</h3>
+<p class="col-12">DESCRIPTION: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum porro debitis harum asperiores, voluptates molestias aut nemo! Doloribus, cumque, totam.</p>
+<div id="editor" class="col-12">//add code here</div>
+<script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="src/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor"); 
+     editor.setTheme("ace/theme/twilight");
+     var JavaScriptMode = ace.require("ace/mode/javascript").Mode;
+     editor.session.setMode(new JavaScriptMode());
+</script> 
+<input id="submit" type="submit" value="Submit" class="col-12 btn-success m-3">
+<input id="next" type="submit" value="Next" class="col-12 btn-success m-3">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+       
+        <script src="src/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
