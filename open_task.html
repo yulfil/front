@@ -32,6 +32,8 @@ position: absolute;
     height:30px;
     left:110px;
 }
+
+
 </style>
 </head>
 <body>
@@ -60,8 +62,9 @@ position: absolute;
         <div class="row justify-content-center m-auto">
             <div class="col-md-12 col-sm-12 text-center">
                 <h3 class="col-12">Course to do</h3>
-<p class="col-12">DESCRIPTION: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum porro debitis harum asperiores, voluptates molestias aut nemo! Doloribus, cumque, totam.</p>
-<div id="editor" class="col-12">//add code here</div>
+<p class="col-md-12 col-sm-12 text-left">DESCRIPTION: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum porro debitis harum asperiores, voluptates molestias aut nemo! Doloribus, cumque, totam.</p>
+<div class="container col-12 col-md-12 col-sm-12 d-flex flex-row ">
+<div id="editor" class="col-md-6 col-sm-6">//add your code here</div>
 <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
 <script src="src/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
 <script>
@@ -70,11 +73,37 @@ position: absolute;
      var JavaScriptMode = ace.require("ace/mode/javascript").Mode;
      editor.session.setMode(new JavaScriptMode());
 </script> 
-<input id="submit" type="submit" value="Submit" class="col-12 btn-success m-3">
+<div class="col-md-6 col-sm-6">
+              <div class="alert alert-info">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i >&times;</i>
+                  </button>
+                  <span>
+                    <b> Info - </b> Your code should pass this test</span>
+                </div>
+                <div class="alert alert-success">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i>&times;</i>
+                  </button>
+                  <span>
+                    <b> Success - </b>Your code has passed</span>
+                </div>
+                <div class="alert alert-danger">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i>&times;</i>
+                  </button>
+                  <span>
+                    <b> Error - </b>You code is not successfull.<br><b>Expected 5, but got 12</b></span>
+                </div>
+              </div>
+            </div><input id="submit" type="submit" value="Submit" class="col-12 btn-success m-3">
 <input id="next" type="submit" value="Next" class="col-12 btn-success m-3">
+          </div>
+          
+      </div>
+
             </div>
-        </div>
-    </div>
+      
 </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
