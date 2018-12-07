@@ -1,47 +1,28 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <title>Course page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!--  Fonts and icons  -->
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  
+
     <!-- Black Dashboard CSS -->
-    <link href="css\black-dashboard.css?v=1.0.0" rel="stylesheet"/>
-    <style type="text/css">
-   
-    #editor {
-    position: relative;
-    width: 500px;
-    height: 300px;
-}
-#submit{
-position: absolute;
-    width:100px;
-    height:30px;
-    left:0;
-}
-#next{
-    position: absolute;
-    width:100px;
-    height:30px;
-    left:110px;
-}
-
-
-</style>
+    <link href="css\black-dashboard.css?v=1.0.0" rel="stylesheet" />
+    <link rel="stylesheet" href="css\style_ot.css">
 </head>
+
 <body>
- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a href="#" class="navbar-brand">Ejudje</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+              <span class="navbar-toggler-icon"></span>
+          </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -56,64 +37,62 @@ position: absolute;
             </ul>
         </div>
     </nav>
-   
-      <section class="container container-full flex-column">
-    <div class="p-sm-3 h-100 col-12 d-flex align-items-center">
-        <div class="row justify-content-center m-auto">
-            <div class="col-md-12 col-sm-12 text-center">
-                <h3 class="col-12">Course to do</h3>
-<p class="col-md-12 col-sm-12 text-left">DESCRIPTION: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum porro debitis harum asperiores, voluptates molestias aut nemo! Doloribus, cumque, totam.</p>
-<div class="container col-12 col-md-12 col-sm-12 d-flex flex-row ">
-<div id="editor" class="col-md-6 col-sm-6">//add your code here</div>
-<script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src="src/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    var editor = ace.edit("editor"); 
-     editor.setTheme("ace/theme/twilight");
-     var JavaScriptMode = ace.require("ace/mode/javascript").Mode;
-     editor.session.setMode(new JavaScriptMode());
-</script> 
-<div class="col-md-6 col-sm-6">
-              <div class="alert alert-info">
-                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                    <i >&times;</i>
-                  </button>
-                  <span>
-                    <b> Info - </b> Your code should pass this test</span>
-                </div>
-                <div class="alert alert-success">
-                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                    <i>&times;</i>
-                  </button>
-                  <span>
-                    <b> Success - </b>Your code has passed</span>
-                </div>
-                <div class="alert alert-danger">
-                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                    <i>&times;</i>
-                  </button>
-                  <span>
-                    <b> Error - </b>You code is not successfull.<br><b>Expected 5, but got 12</b></span>
-                </div>
-              </div>
-            </div><input id="submit" type="submit" value="Submit" class="col-12 btn-success m-3">
-<input id="next" type="submit" value="Next" class="col-12 btn-success m-3">
-          </div>
-          
-      </div>
 
+    <section class="container container-full flex-column">
+        <div class="p-sm-3 h-100 col-12 d-flex align-items-center">
+            <div class="row justify-content-center m-auto">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <h3 class="col-12">Course to do</h3>
+                    <p class="col-md-12 col-sm-12 text-left">DESCRIPTION: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum porro debitis harum asperiores, voluptates molestias aut nemo! Doloribus, cumque, totam.</p>
+                    <div class="container col-12 col-md-12 col-sm-12 d-flex flex-row ">
+                        <div id="editor" class="col-md-6 col-sm-6">//add your code here</div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="alert alert-info">
+                                <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                      <i >&times;</i>
+                    </button>
+                                <span>
+                      <b> Info - </b> Your code should pass this test</span>
+                            </div>
+                            <div class="alert alert-success">
+                                <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                      <i>&times;</i>
+                    </button>
+                                <span>
+                      <b> Success - </b>Your code has passed</span>
+                            </div>
+                            <div class="alert alert-danger">
+                                <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                      <i>&times;</i>
+                    </button>
+                                <span>
+                      <b> Error - </b>You code is not successfull.<br><b>Expected 5, but got 12</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-      
-</section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-       
-        <script src="src/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
+        </div>
+        <div class="fd-flex justify-content-start"> <input type="submit" value="Submit" class="col-3 btn-success m-3">
+            <input type="submit" value="Next" class="col-3 btn-success m-3"></div>
+
+    </section>
+    <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="src/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor"); 
+           editor.setTheme("ace/theme/twilight");
+           var JavaScriptMode = ace.require("ace/mode/javascript").Mode;
+           editor.session.setMode(new JavaScriptMode());
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="src/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
+
 </html>
