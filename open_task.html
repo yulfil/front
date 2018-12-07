@@ -33,6 +33,87 @@ position: absolute;
     left:110px;
 }
 
+@media only screen and (max-device-width: 790px) {
+    
+  .cont2{
+        display: flex;
+    flex-direction: column;
+        margin-right: 15px;
+        justify-content: center;
+    }
+    
+
+        .columnfull{
+            position: relative;
+     width:75vw;
+     height:auto;
+    margin-top: 160px;
+    
+     margin-left:0;  
+
+        }
+        #editor{
+        width: 250px;
+        height: 150px;
+        justify-content: center;
+        margin: 0 auto;
+        position:absolute;
+
+        }
+
+#submit{
+position: absolute;
+    width:100px;
+    height:35px;
+    left:-10px;
+}
+#next{
+    position: absolute;
+    width:100px;
+    height:35px;
+    left:130px;
+} 
+}
+@media only screen and (max-width: 790px){
+    .cont2{
+        display: flex;
+    flex-direction: column;
+        margin-right: 15px;
+        justify-content: center;
+    }
+    
+
+        .columnfull{
+            position: relative;
+     width:75vw;
+     height:auto;
+    margin-top: 160px;
+    
+     margin-left:0;  
+
+        }
+        #editor{
+        width: 250px;
+        height: 150px;
+        justify-content: center;
+        margin: 0 auto;
+        position:absolute;
+
+        }
+
+#submit{
+position: absolute;
+    width:100px;
+    height:35px;
+    left:-10px;
+}
+#next{
+    position: absolute;
+    width:100px;
+    height:35px;
+    left:130px;
+}
+}
 
 </style>
 </head>
@@ -63,8 +144,8 @@ position: absolute;
             <div class="col-md-12 col-sm-12 text-center">
                 <h3 class="col-12">Course to do</h3>
 <p class="col-md-12 col-sm-12 text-left">DESCRIPTION: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum porro debitis harum asperiores, voluptates molestias aut nemo! Doloribus, cumque, totam.</p>
-<div class="container col-12 col-md-12 col-sm-12 d-flex flex-row ">
-<div id="editor" class="col-md-6 col-sm-6">//add your code here</div>
+<div class="container col-12 col-md-12 col-sm-12 d-flex flex-row cont2">
+<div id="editor" class="col-md-6 col-sm-6 ">//add your code here</div>
 <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
 <script src="src/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
 <script>
@@ -73,7 +154,7 @@ position: absolute;
      var JavaScriptMode = ace.require("ace/mode/javascript").Mode;
      editor.session.setMode(new JavaScriptMode());
 </script> 
-<div class="col-md-6 col-sm-6">
+<div class="col-md-6 col-sm-6 columnfull">
               <div class="alert alert-info">
                   <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
                     <i >&times;</i>
